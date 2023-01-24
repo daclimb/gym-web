@@ -1,13 +1,11 @@
 <template>
-  <MainView/>
+  <router-view/>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import MainView from '@/views/MainView'
 
 export default defineComponent({
-  components: { MainView }
 })
 </script>
 

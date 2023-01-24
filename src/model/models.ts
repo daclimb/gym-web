@@ -7,3 +7,7 @@ export interface Gym {
   likeCount: number
   isLikedByMe: boolean
 }
+
+export interface GymDetails extends Gym {
+  imageUrls: string[]
+}

@@ -1,7 +1,10 @@
 <template>
   <div class="gym-card-list-main">
     <div class="content">
-      <GymCard class="gym-card-item" v-for="gym in listItems" :key="gym.id" :gym="gym"/>
+      <GymCard class="gym-card-item"
+               v-for="gym in listItems"
+               :key="gym.id" :gym="gym"
+      @click="onClickGymCard(gym.id)"/>
     </div>
   </div>
 </template>
@@ -19,6 +22,11 @@ export default defineComponent({
     return {
       listItems: gymList as Gym[]
     }
+  },
+  methods: {
+    onClickGymCard (id: string) {
+      this.$router.push('/gym/' + id)
+    }
   }
 })
 </script>
@@ -31,6 +39,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 100px;
 
   .content {
     width: 70%;
