@@ -1,10 +1,15 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <MainView/>
 </template>
+
+<script>
+import { defineComponent } from 'vue'
+import MainView from '@/views/MainView'
+
+export default defineComponent({
+  components: { MainView }
+})
+</script>
 
 <style lang="scss">
 #app {
