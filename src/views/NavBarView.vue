@@ -1,24 +1,34 @@
 <template>
   <div class="nav-bar-main">
-    <div class="logo-wrapper">
+    <div class="logo-wrapper" @click="onClickLogo">
       <img alt="logo" class="logo" src="@/assets/logo.png"/>
     </div>
     <div class="nav-wrapper">
       <div class="nav-items">
-        <span>로그인</span>
-        <span>회원가입</span>
+        <span @click="onClickLogin">로그인</span>
+        <span @click="onClickSignup">회원가입</span>
       </div>
       <img alt="hamburger" class="hamburger" src="@/assets/hamburger.png"/>
     </div>
   </div>
-
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'NavBarView'
+  name: 'NavBarView',
+  methods: {
+    onClickLogo() {
+      this.$router.push('/')
+    },
+    onClickLogin() {
+      this.$router.push('/login')
+    },
+    onClickSignup() {
+      this.$router.push('/signup')
+    }
+  }
 })
 </script>
 

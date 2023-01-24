@@ -13,6 +13,7 @@ export default defineComponent({
 
 #app {
   font-family: 'Noto Sans KR', sans-serif !important;
+  position: relative;
 }
 
 * {

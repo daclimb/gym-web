@@ -8,6 +8,13 @@ export interface Gym {
   isLikedByMe: boolean
 }
 
+export interface Tag {
+  id: string
+  name: string
+}
+
 export interface GymDetails extends Gym {
   imageUrls: string[]
+  description: string
+  tags: Tag[]
 }
