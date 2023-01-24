@@ -1,14 +1,18 @@
 <template>
-  <HeaderView/>
+  <div class="main-content">
+    <HeaderView/>
+    <GymCardListView/>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HeaderView from '@/views/HeaderView.vue' // @ is an alias to /src
+import HeaderView from '@/views/HeaderView.vue'
+import GymCardListView from '@/views/GymCardListView.vue' // @ is an alias to /src
 
 export default defineComponent({
   name: 'MainView',
-  components: { HeaderView }
+  components: { GymCardListView, HeaderView }
 })
 </script>
 
