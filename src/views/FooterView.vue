@@ -100,7 +100,6 @@ export default defineComponent({
         }
       }
       .copyright {
-        font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         color: #666666;

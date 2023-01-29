@@ -34,6 +34,12 @@ export interface OpeningHours {
   value: string
 }
 
+export interface Comment {
+  content: string
+  createdAt: string
+  author: string
+}
+
 export interface GymDetails extends Gym {
   imageUrls: string[]
   description: string
@@ -44,4 +50,5 @@ export interface GymDetails extends Gym {
   convenience: string[]
   difficulties: string[]
   contact: Contact
+  comments: Comment[]
 }

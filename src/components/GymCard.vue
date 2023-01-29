@@ -49,7 +49,6 @@ export default defineComponent({
     padding: 16px;
 
     .address {
-      font-weight: 400;
       font-size: 16px;
       line-height: 150%;
       color: #666666;
@@ -65,7 +64,6 @@ export default defineComponent({
     }
 
     .lastSettingAt {
-      font-weight: 400;
       font-size: 16px;
       color: #666666;
     }
@@ -80,7 +78,6 @@ export default defineComponent({
         gap: 7px;
 
         .like-count {
-          font-weight: 400;
           font-size: 16px;
           line-height: 150%;
           color: #666666;

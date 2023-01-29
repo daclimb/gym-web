@@ -63,6 +63,19 @@ export const gymDetails: GymDetails = {
     phone: '02-1111-1111',
     email: 'thejas_gym'
   },
+  comments: [{
+    content: '여기 너무 좋아요',
+    createdAt: '22.02.18',
+    author: '클라이밍'
+  }, {
+    content: '샤워시설이 깨끗하고 좋아요',
+    createdAt: '22.02.18',
+    author: '암장'
+  }, {
+    content: '난이도 적절해서 좋았어요',
+    createdAt: '22.02.18',
+    author: '닉네임'
+  }],
   ...gym
 }
 

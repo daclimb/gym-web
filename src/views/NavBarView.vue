@@ -68,7 +68,6 @@ export default defineComponent({
       margin-right: 50px;
 
       span {
-        font-weight: 400;
         font-style: normal;
         line-height: 150%;
         color: #151922;

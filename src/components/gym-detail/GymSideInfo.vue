@@ -88,7 +88,6 @@ export default defineComponent({
   }
 
   .text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: #666666;
@@ -116,7 +115,6 @@ export default defineComponent({
         padding: 4px 8px;
         background: #EBEBEB;
         border-radius: 8px;
-        font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         color: #666666;
@@ -167,7 +165,6 @@ export default defineComponent({
       justify-content: space-between;
 
       p {
-        font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         color: #B7B7B7;

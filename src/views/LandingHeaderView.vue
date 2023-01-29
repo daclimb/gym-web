@@ -116,7 +116,6 @@ export default defineComponent({
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
           border-radius: 8px;
 
-          font-weight: 400;
           font-size: 16px;
           line-height: 22px;
           /* identical to box height, or 138% */
@@ -127,7 +126,6 @@ export default defineComponent({
           }
 
           &::placeholder {
-            font-weight: 400;
             font-size: 16px;
             line-height: 22px;
             /* identical to box height, or 138% */
@@ -150,7 +148,6 @@ export default defineComponent({
       justify-content: space-between;
 
       span {
-        font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         font-feature-settings: 'pnum' on, 'lnum' on;
