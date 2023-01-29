@@ -13,7 +13,7 @@
 import { defineComponent } from 'vue'
 import GymCard from '@/components/GymCard.vue'
 import { Gym } from '@/model/models'
-import { gymDataService } from '@/service/GymDataService'
+import { gymDataService } from '@/service/gym-data.service'
 
 export default defineComponent({
   name: 'GymCardListView',

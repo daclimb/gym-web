@@ -12,6 +12,8 @@
       </div>
       <div class="divider"/>
       <p class="description">{{ gymDetails.description }}</p>
+      <map-viewer class="map" :latitude="gymDetails.location.latitude"
+                  :longitude="gymDetails.location.longitude"/>
     </div>
     <div class="side-info">
       <div class="tags">
@@ -71,10 +73,12 @@
 import { defineComponent, PropType } from 'vue'
 import { GymDetails } from '@/model/models'
 import ColorPalette from '@/components/ColorPalette.vue'
+import MapViewer from '@/components/MapViewer.vue'
 
 export default defineComponent({
   name: 'GymInfo',
   components: {
+    MapViewer,
     ColorPalette
   },
   props: {
@@ -163,6 +167,11 @@ export default defineComponent({
       line-height: 150%;
       /* or 36px */
       color: #666666;
+      margin-bottom: 40px;
+    }
+
+    .map {
+      width: 100%;
     }
   }
 

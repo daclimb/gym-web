@@ -20,7 +20,7 @@ import NavBarView from '@/views/NavBarView.vue'
 import ImagePager from '@/components/ImagePager.vue'
 import GymInfo from '@/components/GymInfo.vue'
 import FooterView from '@/views/FooterView.vue'
-import { gymDataService } from '@/service/GymDataService'
+import { gymDataService } from '@/service/gym-data.service'
 
 export default defineComponent({
   name: 'GymDetailView',

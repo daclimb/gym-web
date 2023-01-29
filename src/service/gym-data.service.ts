@@ -1,5 +1,5 @@
 import { Gym, GymDetails } from '@/model/models'
-import { gymDetails, gymList } from '@/mock/mock-data'
+import { gymDetails, gymList } from '@/service/mock/mock-data'
 
 export class GymDataService {
   public loadGymList(): Promise<Gym[]> {
