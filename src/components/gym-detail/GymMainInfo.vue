@@ -2,7 +2,7 @@
   <div class="main-info">
     <div class="location">
       <img class="image" src="@/assets/location.png"/>
-      <p class="text">{{ gymDetails.address }}</p>
+      <p class="text">{{ gymDetails.address.roadAddress }} {{ gymDetails.address.detailedAddress }}</p>
     </div>
     <div class="title-info">
       <p class="name">{{ gymDetails.name }}</p>

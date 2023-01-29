@@ -1,20 +1,19 @@
-export interface Gym {
-  id: string
-  thumbnailUrl: string
-  address: string
-  name: string
-  lastSettingAt: string
-  likeCount: number
-  isLikedByMe: boolean
-}
-
 export interface Payment {
   title: string
   price: number
 }
 
+export interface Address {
+  roadAddress: string
+  jibunAddress: string
+  sido: string
+  sigungu: string
+  sigunguCode: string
+  roadName: string
+  detailedAddress: string
+}
+
 export interface Location {
-  address: string
   longitude: number
   latitude: number
 }
@@ -38,6 +37,16 @@ export interface Comment {
   content: string
   createdAt: string
   author: string
+}
+
+export interface Gym {
+  id: string
+  thumbnailUrl: string
+  address: Address
+  name: string
+  lastSettingAt: string
+  likeCount: number
+  isLikedByMe: boolean
 }
 
 export interface GymDetails extends Gym {

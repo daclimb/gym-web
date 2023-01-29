@@ -1,24 +1,33 @@
-import { Gym, GymDetails, Location, Tag } from '@/model/models'
-
-const gym: Gym = {
-  id: '123',
-  thumbnailUrl: 'https://ldb-phinf.pstatic.net/20220316_150/1647394513104roSMP_JPEG/3.jpg?type=w1500_60_sharpen',
-  address: '서울 강남구 신사동 529-4 B1',
-  name: '더자스클라이밍짐',
-  lastSettingAt: '2022-12-12',
-  likeCount: 0,
-  isLikedByMe: false
-}
+import { Address, Gym, GymDetails, Location, Tag } from '@/model/models'
 
 const tag: Tag = {
   id: '232',
   name: '태그'
 }
 
+const address: Address = {
+  roadName: '신사대로',
+  roadAddress: '서울 강남구 신사대로',
+  sido: '서울',
+  sigungu: '강남구',
+  sigunguCode: '12345',
+  jibunAddress: '서울 강남구 신사동 529-4',
+  detailedAddress: 'B1'
+}
+
 const location: Location = {
-  address: '서울 강남구 신사동 529-4 B1',
   latitude: 37.55563529334659,
   longitude: 126.93394054827883
+}
+
+const gym: Gym = {
+  id: '123',
+  thumbnailUrl: 'https://ldb-phinf.pstatic.net/20220316_150/1647394513104roSMP_JPEG/3.jpg?type=w1500_60_sharpen',
+  address: address,
+  name: '더자스클라이밍짐',
+  lastSettingAt: '2022-12-12',
+  likeCount: 0,
+  isLikedByMe: false
 }
 
 export const gymDetails: GymDetails = {
