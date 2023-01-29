@@ -6,6 +6,7 @@
                   :image-urls="gymDetails.imageUrls"/>
       <GymInfo v-if="gymDetails.contact !== undefined" :gym-details="gymDetails"/>
     </div>
+    <FooterView/>
   </div>
   <div class="background"/>
   <div class="gradient-area"/>
@@ -19,10 +20,11 @@ import { gymDetails } from '@/mock/mock-data'
 import NavBarView from '@/views/NavBarView.vue'
 import ImagePager from '@/components/ImagePager.vue'
 import GymInfo from '@/components/GymInfo.vue'
+import FooterView from '@/views/FooterView.vue'
 
 export default defineComponent({
   name: 'GymDetailView',
-  components: { GymInfo, ImagePager, NavBarView },
+  components: { FooterView, GymInfo, ImagePager, NavBarView },
   data () {
     return {
       gymDetails: {} as GymDetails
@@ -44,6 +46,7 @@ export default defineComponent({
 
   .content {
     width: 70%;
+    padding-bottom: 200px;
   }
 }
 

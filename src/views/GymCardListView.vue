@@ -39,7 +39,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 
   .content {
     width: 70%;
