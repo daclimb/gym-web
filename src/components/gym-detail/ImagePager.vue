@@ -1,12 +1,12 @@
 <template>
   <div class="image-pager-main">
-    <img class="image"
+    <img class="image" alt="image"
          :src="currentImageUrl"/>
     <div class="arrow-left-wrapper" @click="onClickArrow(-1)">
-      <img class="arrow-image" src="@/assets/arrow-left.png"/>
+      <img class="arrow-image" alt="arrow-left" src="@/assets/arrow-left.png"/>
     </div>
     <div class="arrow-right-wrapper" @click="onClickArrow(1)">
-      <img class="arrow-image" src="@/assets/arrow-right.png"/>
+      <img class="arrow-image" alt="arrow-right" src="@/assets/arrow-right.png"/>
     </div>
   </div>
 </template>

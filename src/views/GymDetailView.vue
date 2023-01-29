@@ -17,8 +17,8 @@
 import { defineComponent } from 'vue'
 import { GymDetails } from '@/model/models'
 import NavBarView from '@/views/NavBarView.vue'
-import ImagePager from '@/components/ImagePager.vue'
-import GymInfo from '@/components/GymInfo.vue'
+import ImagePager from '@/components/gym-detail/ImagePager.vue'
+import GymInfo from '@/components/gym-detail/GymInfo.vue'
 import FooterView from '@/views/FooterView.vue'
 import { gymDataService } from '@/service/gym-data.service'
 

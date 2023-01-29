@@ -23,6 +23,9 @@ export class MapService {
     marker.setMap(map)
     return map
   }
+  // createMarkerContent() {
+  //   return `<div style="display: flex; flex-direction: column; justify-content: center; align-items: center"><p>${this.gym.name}</p></div>`
+  // },
 }
 
 export const mapService = new MapService()

@@ -28,9 +28,6 @@ export default defineComponent({
       }
       mapService.markPlace(container, this.latitude, this.longitude)
     }
-    // createMarkerContent() {
-    //   return `<div style="display: flex; flex-direction: column; justify-content: center; align-items: center"><p>${this.gym.name}</p></div>`
-    // },
   },
   mounted () {
     this.loadMap()
