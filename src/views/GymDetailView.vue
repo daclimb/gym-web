@@ -16,11 +16,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { GymDetails } from '@/model/models'
-import { gymDetails } from '@/mock/mock-data'
 import NavBarView from '@/views/NavBarView.vue'
 import ImagePager from '@/components/ImagePager.vue'
 import GymInfo from '@/components/GymInfo.vue'
 import FooterView from '@/views/FooterView.vue'
+import { gymDataService } from '@/service/GymDataService'
 
 export default defineComponent({
   name: 'GymDetailView',
@@ -30,8 +30,9 @@ export default defineComponent({
       gymDetails: {} as GymDetails
     }
   },
-  mounted () {
-    this.gymDetails = gymDetails
+  async mounted () {
+    const id = this.$route.params.id as string
+    this.gymDetails = await gymDataService.loadGymDetail(id)
   }
 })
 </script>

@@ -12,21 +12,24 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import GymCard from '@/components/GymCard.vue'
-import { gymList } from '@/mock/mock-data'
 import { Gym } from '@/model/models'
+import { gymDataService } from '@/service/GymDataService'
 
 export default defineComponent({
   name: 'GymCardListView',
   components: { GymCard },
   data () {
     return {
-      listItems: gymList as Gym[]
+      listItems: [] as Gym[]
     }
   },
   methods: {
     onClickGymCard (id: string) {
       this.$router.push('/gym/' + id)
     }
+  },
+  async mounted () {
+    this.listItems = await gymDataService.loadGymList()
   }
 })
 </script>
